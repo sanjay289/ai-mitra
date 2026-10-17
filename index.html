@@ -773,7 +773,7 @@ window.lucide={createIcons:function(){var P={"arrow-down-circle": "<circle cx=\"
 
         const PAGE_URL = 'https://sanjay289.github.io/ai-mitra/';
         function openWhatsApp(text) {
-            const u = 'https://wa.me/?text=' + encodeURIComponent(text);
+            const u = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(text);
             const w = window.open(u, '_blank', 'noopener');
             if (!w) location.href = u;
         }
